@@ -1,0 +1,12 @@
+inherit kde4
+
+NAME="homerun"
+VERSION=1.1.0
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE fullscreen launcher"
+DESCRIPTION="Homerun is a fullscreen launcher with content organized in tabs.
+A tab is composed of several 'sources'. A source can provide one or more
+sections to a tab. Homerun comes with a few built-in sources, but custom
+sources can be written using libhomerun."
+SRC_URI="mirror://kde/stable/homerun/src/homerun-${VERSION}.tar.xz"
