@@ -1,0 +1,33 @@
+--- origsrc/homerun-1.1.0/components/CMakeLists.txt	2013-07-14 22:05:37.000000000 -0500
++++ src/homerun-1.1.0/components/CMakeLists.txt	2013-09-09 09:57:20.317730000 -0500
+@@ -60,7 +60,7 @@ include_directories(
+     ${CMAKE_CURRENT_SOURCE_DIR}/sources/session
+     )
+ 
+-kde4_add_library(componentsplugin SHARED ${components_SRCS})
++kde4_add_library(componentsplugin MODULE ${components_SRCS})
+ 
+ target_link_libraries(componentsplugin
+         ${QT_QTCORE_LIBRARY}
+--- origsrc/homerun-1.1.0/fixes/CMakeLists.txt	2013-07-14 22:05:37.000000000 -0500
++++ src/homerun-1.1.0/fixes/CMakeLists.txt	2013-09-09 09:57:55.809760000 -0500
+@@ -7,7 +7,7 @@ set(fixes_SRCS
+ 
+ qt4_automoc(${fixes_SRCS})
+ 
+-kde4_add_library(fixesplugin SHARED ${fixes_SRCS})
++kde4_add_library(fixesplugin MODULE ${fixes_SRCS})
+ 
+ target_link_libraries(fixesplugin
+         ${QT_QTCORE_LIBRARY}
+--- origsrc/homerun-1.1.0/plugins/recentdocuments/CMakeLists.txt	2013-07-14 22:05:37.000000000 -0500
++++ src/homerun-1.1.0/plugins/recentdocuments/CMakeLists.txt	2013-09-09 09:56:26.910675300 -0500
+@@ -8,7 +8,7 @@ set(recentdocuments_SRCS
+ qt4_automoc(${recentdocuments_SRCS})
+ 
+ # Build
+-kde4_add_plugin(homerun_source_recentdocuments SHARED ${recentdocuments_SRCS})
++kde4_add_plugin(homerun_source_recentdocuments ${recentdocuments_SRCS})
+ 
+ include_directories(
+     ${lib_SOURCE_DIR}

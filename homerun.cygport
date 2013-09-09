@@ -10,3 +10,4 @@ A tab is composed of several 'sources'. A source can provide one or more
 sections to a tab. Homerun comes with a few built-in sources, but custom
 sources can be written using libhomerun."
 SRC_URI="mirror://kde/stable/homerun/src/homerun-${VERSION}.tar.xz"
+PATCH_URI="1.1.0-cmake-module.patch"
