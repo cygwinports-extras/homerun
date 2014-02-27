@@ -20,6 +20,17 @@
  
  target_link_libraries(fixesplugin
          ${QT_QTCORE_LIBRARY}
+--- origsrc/homerun-1.2.0/kicker/components/CMakeLists.txt	2014-01-27 12:17:21.000000000 -0600
++++ src/homerun-1.2.0/kicker/components/CMakeLists.txt	2014-02-27 11:11:29.820399900 -0600
+@@ -13,7 +13,7 @@ set(kicker_SRCS
+ 
+ qt4_automoc(${kicker_SRCS})
+ 
+-kde4_add_library(kickerplugin SHARED ${kicker_SRCS})
++kde4_add_library(kickerplugin MODULE ${kicker_SRCS})
+ 
+ target_link_libraries(kickerplugin
+         ${QT_QTCORE_LIBRARY}
 --- origsrc/homerun-1.1.0/plugins/recentdocuments/CMakeLists.txt	2013-07-14 22:05:37.000000000 -0500
 +++ src/homerun-1.1.0/plugins/recentdocuments/CMakeLists.txt	2013-09-09 09:56:26.910675300 -0500
 @@ -8,7 +8,7 @@ set(recentdocuments_SRCS
