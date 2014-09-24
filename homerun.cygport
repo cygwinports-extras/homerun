@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="homerun"
-VERSION=1.2.0
+VERSION=1.2.5
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE fullscreen launcher"
